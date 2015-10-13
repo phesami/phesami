@@ -1,0 +1,30 @@
+
+f95 -c -O0  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 255.97   f95 -O0 formatted I/O
+f95 -c -O1  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 252.47   f95 -O1 formatted I/O
+f95 -c -O2  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 252.40   f95 -O2 formatted I/O
+f95 -c -O3  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 255.28   f95 -O0 formatted I/O
+f95 -c -O4  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 251.43  f95 -O0 formatted I/O
+f95 -c -O5  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 255.90   f95 -O0 formatted I/O
+f95 -c -O6  versions/main_wIO.f F77WAVE.f
+f95 -o app  -static main_wIO.o F77WAVE.o   -lf2c
+app < input > tmp.out
+CPU-time: 252.15   f95 -O0 formatted I/O
+
