@@ -1,0 +1,15 @@
+#########################################
+# Editor temporary/working/backup files #
+.ipynb_checkpoints
+
+
+
+# Data files #
+##############
+pandas/io/*.dat
+
+
+# Documentation generated files #
+#################################
+data
+day_2_github_io_numpy_pandas/data/*
